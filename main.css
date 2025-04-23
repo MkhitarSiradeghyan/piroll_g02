@@ -2,16 +2,18 @@
     /* Colors */
     --color-accent: #10C9C3;
     --color-black: #000;
-    --color-dark: #222;
-    --color-grey: #888;
-    --color-light: #ddd;
+    --color-grey-1: #222;
+    --color-grey-2: #444;
+    --color-grey-3: #888;
+    --color-grey-4: #ccc;
+    --color-grey-5: #eee;
     --color-white: #fff;
     /* Font Sizes */
     --fz-xs: 12px;
     --fz-s: 16px;
     --fz-m: 18px;
     --fz-l: 24px;
-    --fz-xl: 36px;
+    --fz-xl: 32px;
 }
 
 * {
@@ -19,31 +21,251 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
 }
+
+.common_heading {
+    font-size: var(--fz-xl);
+    font-weight: 500;
+    color: var(--color-grey-1);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+
+.common_text {
+    font-size: var(--fz-s);
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1.5;
+    color: var(--color-grey-1);
+}
+
 .container {
     width: 94%;
     height: 100%;
     margin: auto;
     max-width: 1600px;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
 }
+
+.header {
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(10px);
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.header_logo {
+    height: 24px;
+}
+
+.header_logo>img {
+    height: 100%;
+}
+
+.header_navlist {
+    list-style: none;
+    gap: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.header_link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--color-grey-1);
+}
+
+.header_link>a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header_active {
+    color: var(--color-accent);
+}
+
 .hero {
-    
+    background: url("https://irinazorg.github.io/piroll/img/bg__lead.jpg") no-repeat center center / cover;
+    height: 100vh;
 }
+
 .hero_wrap {
-    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
 }
+
 .hero_block {
-    
+    width: 50%;
+    min-width: 500px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1em;
 }
-.hero_heading {
-    
-}
-.hero_text {
-    
-}
+
 .hero_button {
-    
+    background: var(--color-accent);
+    padding: 18px 48px;
+    color: var(--color-white);
+    font-size: var(--fz-xs);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 4px;
+    border: none;
+}
+
+.about_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    padding: 80px 0;
+}
+
+.about_text {
+    max-width: 600px;
+    text-align: center;
+}
+
+.about_img {
+    width: 200px;
+    height: 60px;
+}
+
+.about_img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.skills {
+    border: 1px solid #000;
+    background: url("./img/conv.jpg") no-repeat center center / cover;
+}
+
+.skills_wrap {
+    padding: 100px 0;
+}
+
+.skills_left {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    max-width: 500px;
+}
+
+.skills_block {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.skills_item {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.skills_text {
+    display: flex;
+    gap: 2em;
+    letter-spacing: 1px;
+}
+
+.skills_title {
+    font-size: var(--fz-xs);
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.skills_percent {
+    font-size: var(--fz-xs);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.skills_line {
+    width: 80%;
+    height: 3px;
+    background: var(--color-grey-4);
+}
+
+.skills_level {
+    background: var(--color-accent);
+    height: 100%;
+}
+
+#lvl_75 {
+    width: 75%;
+}
+
+#lvl_90 {
+    width: 90%;
+}
+
+#lvl_65 {
+    width: 65%;
+}
+
+.stats {
+    background: var(--color-accent);
+
+}
+
+.stats_wrap {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stats_item {
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "icon num"
+    "icon text";
+    column-gap: 0.5em;
+}
+
+.stats_icon {
+    aspect-ratio: 1 / 1;
+    grid-area: icon;
+    font-size: 36px;
+    line-height: 1;
+}
+
+.stats_num {
+    grid-area: num;
+    font-size: var(--fz-m);
+    font-weight: 500;
+    line-height: 1;
+}
+
+.stats_text {
+    grid-area: text;
+    font-size: var(--fz-xs);
+    font-weight: 500;
+    line-height: 1;
 }
