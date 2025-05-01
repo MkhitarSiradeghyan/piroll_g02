@@ -1,6 +1,7 @@
 :root {
     /* Colors */
     --color-accent: #10C9C3;
+    --color-accent-hover: #0AA;
     --color-black: #000;
     --color-grey-1: #222;
     --color-grey-2: #444;
@@ -30,7 +31,10 @@ body {
     min-height: 100vh;
     font-family: "Montserrat", sans-serif;
 }
-
+::selection {
+    background: var(--color-accent-hover);
+    color: var(--color-white);
+}
 .common_heading {
     font-size: var(--fz-xl);
     font-weight: 500;
@@ -45,6 +49,18 @@ body {
     font-family: "Nunito Sans", sans-serif;
     line-height: 1.5;
     color: var(--color-grey-1);
+}
+
+.common_input {
+    font-size: var(--fz-s);
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1.5;
+    color: var(--color-grey-2);
+    border-radius: 4px;
+    border: 1px solid var(--color-grey-3);
+    padding: 8px 16px;
+
 }
 
 .container {
@@ -159,7 +175,6 @@ body {
 }
 
 .skills {
-    border: 1px solid #000;
     background: url("./img/conv.jpg") no-repeat center center / cover;
 }
 
@@ -372,7 +387,7 @@ body {
 }
 
 .work_button:hover {
-    background: #0aa;
+    background: var(--color-accent-hover);
     transition: 0.3s;
 }
 
@@ -384,20 +399,24 @@ body {
     background: var(--color-grey-5);
     padding: 80px 0;
 }
+
 .apps_wrap {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3em;
 }
+
 .apps_item {
     text-align: center;
-width: 70%;
-justify-self: center;
+    width: 70%;
+    justify-self: center;
 }
+
 .apps_icon {
     font-size: var(--fz-xl);
     color: var(--color-grey-3);
 }
+
 .apps_title {
     font-size: var(--fz-xs);
     color: var(--color-black);
@@ -405,11 +424,159 @@ justify-self: center;
     font-weight: 500;
     line-height: 1.5;
 }
+
 .apps_text {
     font-size: var(--fz-s);
     color: var(--color-grey-3);
     font-weight: 400;
     line-height: 1.5;
     font-family: "Nunito Sans", sans-serif;
-    
+
+}
+
+.reviews {
+    background: var(--color-accent);
+    color: var(--color-white);
+}
+
+.reviews_wrap {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.reviews_btn {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: var(--fz-xl);
+}
+
+.reviews_btn_left {
+    left: 0;
+}
+
+.reviews_btn_right {
+    right: 0;
+}
+
+.reviews_box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 500px;
+    width: 70%;
+}
+
+.reviews_text {
+    color: var(--color-white);
+}
+
+
+.reviews_pages {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    bottom: 2em;
+}
+
+.reviews_line {
+    width: 30px;
+    height: 3px;
+    background: var(--color-white);
+    opacity: 0.5;
+}
+
+.reviews_active {
+    opacity: 1;
+}
+
+.logos_wrap {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+    padding: 80px 0;
+}
+
+.logos_item {
+    height: 70px;
+}
+
+.logos_item>img {
+    height: 100%;
+}
+
+.project {
+    background: var(--color-grey-5);
+    padding: 80px 0;
+}
+
+.project_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+}
+
+.project_text {
+    max-width: 500px;
+}
+
+.project_form {
+    width: 90%;
+    max-width: 600px;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-areas: 
+        "name email"
+        "title title"
+        "comment comment"
+        "button button";
+}
+
+.project_input_name {
+grid-area: name;
+}
+
+.project_input_email {
+grid-area: email;
+}
+
+.project_input_title {
+grid-area: title;
+}
+
+.project_input_comment {
+    grid-area: comment;
+    resize: none;
+}
+
+.project_button {
+    grid-area: button;
+    border-radius: 4px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: var(--fz-s);
+    border: none;
+    background: var(--color-accent);
+    color: var(--color-white);
+    padding: 8px 48px;
+    justify-self: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.project_button:hover {
+    background: var(--color-accent-hover);
+    transition: 0.3s;
 }
