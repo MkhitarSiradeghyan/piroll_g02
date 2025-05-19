@@ -1,335 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piroll</title><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-     <header class="header">
-        <div class="container">
-            <div class="header_wrap">
-                <div class="header_logo">
-                    <img src="./img/favicon.png" alt="">
-                </div>
-                <nav class="header_nav">
-                    <ul class="header_navlist">
-                        <li class="header_link header_active">
-                            <a href="#hero">Home</a>
-                        </li>
-                        <li class="header_link">
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="header_link">
-                            <a href="#skills">Skills</a>
-                        </li>
-                        <li class="header_link">
-                            <a href="#gallery">Gallery</a>
-                        </li>
-                        <li class="header_link">
-                            <a href="#work">Work</a>
-                        </li>
-                        <li class="header_link">
-                            <a href="#project">Contact</a>
-                        </li>
-                        
-                    </ul>
-                </nav>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piroll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_wrap">
+          <div class="header_logo">
+            <img src="./img/favicon.png" alt="" />
+          </div>
+          <input type="checkbox" id="burger_check">
+          <label class="burger" for="burger_check">
+            <div class="line top"></div>
+            <div class="line middle"></div>
+            <div class="line bottom"></div>
+          </label>
+          <nav class="header_nav">
+            <ul class="header_navlist">
+              <li class="header_link header_active">
+                <a href="#hero">Home</a>
+              </li>
+              <li class="header_link">
+                <a href="#about">About</a>
+              </li>
+              <li class="header_link">
+                <a href="#skills">Skills</a>
+              </li>
+              <li class="header_link">
+                <a href="#gallery">Gallery</a>
+              </li>
+              <li class="header_link">
+                <a href="#work">Work</a>
+              </li>
+              <li class="header_link">
+                <a href="#project">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-    </header> 
+      </div>
+    </header>
     <main class="main">
-         <section class="hero" id="hero">
-            <div class="container">
-                <div class="hero_wrap">
-                    <div class="hero_block">
-                        <h1 class="hero_heading common_heading">We Design and Develop</h1>
-                        <p class="hero_text common_text">We are a new design studio based in USA. We have over 20 years of
-                            combined experience, and know a thing or two about designing websites
-                            and mobile apps.</p>
-                        <button class="hero_button">contact us</button>
-                    </div>
-                </div>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero_wrap">
+            <div class="hero_block">
+              <h1 class="hero_heading common_heading">We Design and Develop</h1>
+              <p class="hero_text common_text">
+                We are a new design studio based in USA. We have over 20 years
+                of combined experience, and know a thing or two about designing
+                websites and mobile apps.
+              </p>
+              <a href="#project" class="hero_button">contact us</a>
             </div>
-        </section>
-        <section class="about" id="about"> 
-            <div class="container">
-                <div class="about_wrap">
-                    <h2 class="about_heading common_heading">About us</h2>
-                    <p class="about_text common_text">Divide have don't man wherein air fourth. Own itself make have night won't make. A you under Seed appear which good give. Own give air without fowl moveth dry first heaven fruit, dominion she'd won't very all.</p>
-                    <div class="about_img">
-                        <img src="./img/sign-w.jpg" alt="Sign">
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about_wrap">
+            <h2 class="about_heading common_heading">About us</h2>
+            <p class="about_text common_text">
+              Divide have don't man wherein air fourth. Own itself make have
+              night won't make. A you under Seed appear which good give. Own
+              give air without fowl moveth dry first heaven fruit, dominion
+              she'd won't very all.
+            </p>
+            <div class="about_img">
+              <img src="./img/sign-w.jpg" alt="Sign" />
             </div>
-        </section>
-        <section class="skills" id="skills">
-            <div class="container">
-                <div class="skills_wrap">
-                    <div class="skills_left">
-                        <h2 class="skills_heading common_heading">Professional Skills</h2>
-                        <div class="skills_block">
-                            <div class="skills_item">
-                                <div class="skills_text">
-                                    <div class="skills_title">UI/UX Design</div>
-                                    <div class="skills_percent">75%</div>
-                                </div>
-                                <div class="skills_line">
-                                    <div class="skills_level" id="lvl_75"></div>
-                                </div>
-                            </div>
-                            <div class="skills_item">
-                                <div class="skills_text">
-                                    <div class="skills_title">web development</div>
-                                    <div class="skills_percent">90%</div>
-                                </div>
-                                <div class="skills_line">
-                                    <div class="skills_level" id="lvl_90"></div>
-                                </div>
-                            </div>
-                            <div class="skills_item">
-                                <div class="skills_text">
-                                    <div class="skills_title">marketing</div>
-                                    <div class="skills_percent">65%</div>
-                                </div>
-                                <div class="skills_line">
-                                    <div class="skills_level" id="lvl_65"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="container">
+          <div class="skills_wrap">
+            <div class="skills_left">
+              <h2 class="skills_heading common_heading">Professional Skills</h2>
+              <div class="skills_block">
+                <div class="skills_item">
+                  <div class="skills_text">
+                    <div class="skills_title">UI/UX Design</div>
+                    <div class="skills_percent">75%</div>
+                  </div>
+                  <div class="skills_line">
+                    <div class="skills_level" id="lvl_75"></div>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <section class="stats" id="stats">
-            <div class="container">
-                <div class="stats_wrap">
-                    <div class="stats_item">
-                        <div class="stats_icon"><i class="pe-7s-portfolio"></i></div>
-                        <div class="stats_num">123</div>
-                        <div class="stats_text">Some text</div>
-                    </div>
-                    <div class="stats_item">
-                        <div class="stats_icon"><i class="pe-7s-clock"></i></div>
-                        <div class="stats_num">123</div>
-                        <div class="stats_text">Some text</div>
-                    </div>
-                    <div class="stats_item">
-                        <div class="stats_icon"><i class="pe-7s-star"></i></div>
-                        <div class="stats_num">123</div>
-                        <div class="stats_text">Some text</div>
-                    </div>
-                    <div class="stats_item">
-                        <div class="stats_icon"><i class="pe-7s-like"></i></div>
-                        <div class="stats_num">123</div>
-                        <div class="stats_text">Some text</div>
-                    </div>
+                <div class="skills_item">
+                  <div class="skills_text">
+                    <div class="skills_title">web development</div>
+                    <div class="skills_percent">90%</div>
+                  </div>
+                  <div class="skills_line">
+                    <div class="skills_level" id="lvl_90"></div>
+                  </div>
                 </div>
-            </div>
-        </section>
-        <section class="gallery" id="gallery">
-            <div class="container">
-                <div class="gallery_wrap">
-                    <div class="gallery_grid">
-                        <div class="gallery_item">
-                            <img src="./img/g1.jpg" alt="Gallery image #1">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                        <div class="gallery_item">
-                            <img src="./img/g2.jpg" alt="Gallery image #2">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                        <div class="gallery_item">
-                            <img src="./img/g3.jpg" alt="Gallery image #3">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                        <div class="gallery_item">
-                            <img src="./img/g4.jpg" alt="Gallery image #4">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                        <div class="gallery_item">
-                            <img src="./img/g5.jpg" alt="Gallery image #5">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                        <div class="gallery_item">
-                            <img src="./img/g6.jpg" alt="Gallery image #6">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                        <div class="gallery_item">
-                            <img src="./img/g7.jpg" alt="Gallery image #7">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                        <div class="gallery_item">
-                            <img src="./img/g8.jpg" alt="Gallery image #8">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                        <div class="gallery_item">
-                            <img src="./img/g9.jpg" alt="Gallery image #9">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                        <div class="gallery_item">
-                            <img src="./img/g10.jpg" alt="Gallery image #10">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                        <div class="gallery_item">
-                            <img src="./img/g11.jpg" alt="Gallery image #11">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                        <div class="gallery_item">
-                            <img src="./img/g12.jpg" alt="Gallery image #12">
-                            <div class="gallery_hover"><i class="pe-7s-look"></i></div>
-                        </div>
-                    </div>
-                    <button class="gallery_button">Load more work</button>
+                <div class="skills_item">
+                  <div class="skills_text">
+                    <div class="skills_title">marketing</div>
+                    <div class="skills_percent">65%</div>
+                  </div>
+                  <div class="skills_line">
+                    <div class="skills_level" id="lvl_65"></div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section> 
-        <section class="work" id="work">
-            <div class="container">
-                <div class="work_wrap">
-                    <h2 class="work_heading common_heading">Our work process</h2>
-                    <p class="work_text common_text">Was years it seasons was there form he in in them together over that, third sixth
-                        gathered female creeping bearing behold years.</p>
-                    <div class="work_video">
-                        <video poster="./img/vid.jpg">
-                            <source src="./video/video.mp4" type="video/mp4">
-                        </video>
-                        <button class="work_button"><i class="pe-7s-play"></i></button>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="stats" id="stats">
+        <div class="container">
+          <div class="stats_wrap">
+            <div class="stats_item">
+              <div class="stats_icon"><i class="pe-7s-portfolio"></i></div>
+              <div class="stats_num">123</div>
+              <div class="stats_text">Some text</div>
             </div>
-        </section>
-        <section class="apps" id="apps">
-            <div class="container">
-                <div class="apps_wrap">
-                    <div class="apps_item">
-                        <div class="apps_icon"><i class="pe-7s-diamond"></i></div>
-                        <div class="apps_title">Title</div>
-                        <div class="apps_text">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="apps_item">
-                        <div class="apps_icon"><i class="pe-7s-arc"></i></div>
-                        <div class="apps_title">Title</div>
-                        <div class="apps_text">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="apps_item">
-                        <div class="apps_icon"><i class="pe-7s-phone"></i></div>
-                        <div class="apps_title">Title</div>
-                        <div class="apps_text">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="apps_item">
-                        <div class="apps_icon"><i class="pe-7s-joy"></i></div>
-                        <div class="apps_title">Title</div>
-                        <div class="apps_text">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="apps_item">
-                        <div class="apps_icon"><i class="pe-7s-plane"></i></div>
-                        <div class="apps_title">Title</div>
-                        <div class="apps_text">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="apps_item">
-                        <div class="apps_icon"><i class="pe-7s-star"></i></div>
-                        <div class="apps_title">Title</div>
-                        <div class="apps_text">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="apps_item">
-                        <div class="apps_icon"><i class="pe-7s-coffee"></i></div>
-                        <div class="apps_title">Title</div>
-                        <div class="apps_text">Lorem ipsum dolor sit amet</div>
-                    </div>
-                    <div class="apps_item">
-                        <div class="apps_icon"><i class="pe-7s-box1"></i></div>
-                        <div class="apps_title">Title</div>
-                        <div class="apps_text">Lorem ipsum dolor sit amet</div>
-                    </div>
-                </div>
+            <div class="stats_item">
+              <div class="stats_icon"><i class="pe-7s-clock"></i></div>
+              <div class="stats_num">123</div>
+              <div class="stats_text">Some text</div>
             </div>
-        </section>
-         <section class="reviews" id="reviews">
-            <div class="container">
-                <div class="reviews_wrap">
-                    <button class="reviews_btn reviews_btn_left">
-                        <i class="pe-7s-angle-left"></i>
-                    </button>
-                    <button class="reviews_btn reviews_btn_right">
-                        <i class="pe-7s-angle-right"></i>
-                    </button>
-                    <div class="reviews_box">
-                        <p class="reviews_text common_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum cum blanditiis nisi placeat velit eligendi.</p>
-                        <span class="reviews_text common_text">Sarah Johnes</span>
-                    </div>
-                    <div class="reviews_pages">
-                        <div class="reviews_line reviews_active"></div>
-                        <div class="reviews_line"></div>
-                        <div class="reviews_line"></div>
-                    </div>
-                </div>
+            <div class="stats_item">
+              <div class="stats_icon"><i class="pe-7s-star"></i></div>
+              <div class="stats_num">123</div>
+              <div class="stats_text">Some text</div>
             </div>
-        </section> 
-         <section class="logos" id="logos">
-            <div class="container">
-                <div class="logos_wrap">
-                    <div class="logos_item"><img src="./img/b1.jpg" alt=""></div>
-                    <div class="logos_item"><img src="./img/b2.jpg" alt=""></div>
-                    <div class="logos_item"><img src="./img/b3.jpg" alt=""></div>
-                    <div class="logos_item"><img src="./img/b4.jpg" alt=""></div>
-                    <div class="logos_item"><img src="./img/b5.jpg" alt=""></div>
-                </div>
+            <div class="stats_item">
+              <div class="stats_icon"><i class="pe-7s-like"></i></div>
+              <div class="stats_num">123</div>
+              <div class="stats_text">Some text</div>
             </div>
-        </section> 
-         <section class="project" id="project">
-            <div class="container">
-                <div class="project_wrap">
-                    <h2 class="project_heading common_heading">Need a project?</h2>
-                    <p class="project_text common_text">Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of
-                        something beautiful.</p>
-                    <form class="project_form">
-                        <input type="text" class="project_input_name common_input" placeholder="Your name">
-                        <input type="email" class="project_input_email common_input" placeholder="Your email">
-                        <input type="text" class="project_input_title common_input" placeholder="Your title">
-                        <textarea class="project_input_comment common_input" placeholder="Your comment"></textarea>
-                        <button class="project_button">Send message</button>
-                    </form>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="gallery_wrap">
+            <div class="gallery_grid">
+              <div class="gallery_item">
+                <img src="./img/g1.jpg" alt="Gallery image #1" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
+              <div class="gallery_item">
+                <img src="./img/g2.jpg" alt="Gallery image #2" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
+              <div class="gallery_item">
+                <img src="./img/g3.jpg" alt="Gallery image #3" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
+              <div class="gallery_item">
+                <img src="./img/g4.jpg" alt="Gallery image #4" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
+              <div class="gallery_item">
+                <img src="./img/g5.jpg" alt="Gallery image #5" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
+              <div class="gallery_item">
+                <img src="./img/g6.jpg" alt="Gallery image #6" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
+              <div class="gallery_item">
+                <img src="./img/g7.jpg" alt="Gallery image #7" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
+              <div class="gallery_item">
+                <img src="./img/g8.jpg" alt="Gallery image #8" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
+              <div class="gallery_item">
+                <img src="./img/g9.jpg" alt="Gallery image #9" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
+              <div class="gallery_item">
+                <img src="./img/g10.jpg" alt="Gallery image #10" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
+              <div class="gallery_item">
+                <img src="./img/g11.jpg" alt="Gallery image #11" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
+              <div class="gallery_item">
+                <img src="./img/g12.jpg" alt="Gallery image #12" />
+                <div class="gallery_hover"><i class="pe-7s-look"></i></div>
+              </div>
             </div>
-        </section> 
-
+            <button class="gallery_button">Load more work</button>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="work">
+        <div class="container">
+          <div class="work_wrap">
+            <h2 class="work_heading common_heading">Our work process</h2>
+            <p class="work_text common_text">
+              Was years it seasons was there form he in in them together over
+              that, third sixth gathered female creeping bearing behold years.
+            </p>
+            <div class="work_video">
+              <video poster="./img/vid.jpg">
+                <source src="./video/video.mp4" type="video/mp4" />
+              </video>
+              <button class="work_button"><i class="pe-7s-play"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="apps" id="apps">
+        <div class="container">
+          <div class="apps_wrap">
+            <div class="apps_item">
+              <div class="apps_icon"><i class="pe-7s-diamond"></i></div>
+              <div class="apps_title">Title</div>
+              <div class="apps_text">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="apps_item">
+              <div class="apps_icon"><i class="pe-7s-arc"></i></div>
+              <div class="apps_title">Title</div>
+              <div class="apps_text">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="apps_item">
+              <div class="apps_icon"><i class="pe-7s-phone"></i></div>
+              <div class="apps_title">Title</div>
+              <div class="apps_text">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="apps_item">
+              <div class="apps_icon"><i class="pe-7s-joy"></i></div>
+              <div class="apps_title">Title</div>
+              <div class="apps_text">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="apps_item">
+              <div class="apps_icon"><i class="pe-7s-plane"></i></div>
+              <div class="apps_title">Title</div>
+              <div class="apps_text">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="apps_item">
+              <div class="apps_icon"><i class="pe-7s-star"></i></div>
+              <div class="apps_title">Title</div>
+              <div class="apps_text">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="apps_item">
+              <div class="apps_icon"><i class="pe-7s-coffee"></i></div>
+              <div class="apps_title">Title</div>
+              <div class="apps_text">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="apps_item">
+              <div class="apps_icon"><i class="pe-7s-box1"></i></div>
+              <div class="apps_title">Title</div>
+              <div class="apps_text">Lorem ipsum dolor sit amet</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="reviews_wrap">
+            <button class="reviews_btn reviews_btn_left">
+              <i class="pe-7s-angle-left"></i>
+            </button>
+            <button class="reviews_btn reviews_btn_right">
+              <i class="pe-7s-angle-right"></i>
+            </button>
+            <div class="reviews_box">
+              <p class="reviews_text common_text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Nostrum cum blanditiis nisi placeat velit eligendi.
+              </p>
+              <span class="reviews_text common_text">Sarah Johnes</span>
+            </div>
+            <div class="reviews_pages">
+              <div class="reviews_line reviews_active"></div>
+              <div class="reviews_line"></div>
+              <div class="reviews_line"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="logos" id="logos">
+        <div class="container">
+          <div class="logos_wrap">
+            <div class="logos_item"><img src="./img/b1.jpg" alt="" /></div>
+            <div class="logos_item"><img src="./img/b2.jpg" alt="" /></div>
+            <div class="logos_item"><img src="./img/b3.jpg" alt="" /></div>
+            <div class="logos_item"><img src="./img/b4.jpg" alt="" /></div>
+            <div class="logos_item"><img src="./img/b5.jpg" alt="" /></div>
+          </div>
+        </div>
+      </section>
+      <section class="project" id="project">
+        <div class="container">
+          <div class="project_wrap">
+            <h2 class="project_heading common_heading">Need a project?</h2>
+            <p class="project_text common_text">
+              Let us know what you're looking for in an agency. We'll take a
+              look and see if this could be the start of something beautiful.
+            </p>
+            <form class="project_form">
+              <input
+                type="text"
+                class="project_input_name common_input"
+                placeholder="Your name"
+              />
+              <input
+                type="email"
+                class="project_input_email common_input"
+                placeholder="Your email"
+              />
+              <input
+                type="text"
+                class="project_input_title common_input"
+                placeholder="Your title"
+              />
+              <textarea
+                class="project_input_comment common_input"
+                placeholder="Your comment"
+              ></textarea>
+              <button class="project_button">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="footer_wrap">
-                <div class="footer_info">
-                    <h3 class="footer_company common_heading">Piroll Design, Inc.</h3>
-                    <div class="footer_block">
-                        <span class="footer_text common_text">© 2017 Piroll. All rights reserved.</span>
-                        <span class="footer_text common_text">Designed by robirurk.</span>
-                    </div>
-                </div>
-                <address class="footer_block">
-                    <span class="footer_text common_text">hello@pirolltheme.com</span>
-                    <span class="footer_text common_text">+44 987 065 908</span>
-                </address>
-                <div class="footer_social">
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                    <div class="footer_item common_text"><a href="#" class="footer_link">Facebook</a></div>
-                </div>
+      <div class="container">
+        <div class="footer_wrap">
+          <div class="footer_info">
+            <h3 class="footer_company common_heading">Piroll Design, Inc.</h3>
+            <div class="footer_block">
+              <span class="footer_text common_text"
+                >© 2017 Piroll. All rights reserved.</span
+              >
+              <span class="footer_text common_text">Designed by robirurk.</span>
             </div>
+          </div>
+          <address class="footer_block">
+            <span class="footer_text common_text">hello@pirolltheme.com</span>
+            <span class="footer_text common_text">+44 987 065 908</span>
+          </address>
+          <div class="footer_social">
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+            <div class="footer_item common_text">
+              <a href="#" class="footer_link">Facebook</a>
+            </div>
+          </div>
         </div>
-
+      </div>
     </footer>
-</body>
+  </body>
 </html>
